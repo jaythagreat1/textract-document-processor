@@ -19,7 +19,8 @@ This project demonstrates enterprise-grade AWS architecture and AI integration b
 - **Cost-Effective**: First 1,000 pages/month free
 
 ## 🏗️ Architecture
-```
+
+![Architecture](architecture-diagram.png)
 User/Application
     │
     ▼
