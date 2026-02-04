@@ -1,0 +1,22 @@
+# Textract Document Processor - Quick Reference
+
+## API Endpoint
+https://uma02rzt4fb.execute-api.us-west-2.amazonaws.com/prod/process
+
+## Test Command
+curl -X POST https://uma02rzt4fb.execute-api.us-west-2.amazonaws.com/prod/process \
+  -H "Content-Type: application/json" \
+  -d '{"bucket":"textract-processor-1769570700","key":"documents/sample-invoice.png"}'
+
+## AWS Resources
+- Lambda: TextractProcessor
+- S3: textract-processor-1769570700
+- API: uma02rzt4fb
+- Region: us-west-2
+
+## Key Features
+- Text extraction from PDFs/images
+- Form field recognition (10 fields found)
+- Table extraction (preserves structure)
+- REST API endpoint
+- Free tier ($0/month)

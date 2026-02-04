@@ -1,0 +1,51 @@
+# AWS Textract Document Processor - Complete Project Info
+
+## Deployment Details
+- **Project Name:** AWS Textract Document Processor
+- **Deployment Date:** January 28, 2026
+- **Region:** us-west-2
+- **Status:** Active and Working
+
+## AWS Resources
+
+### Lambda Function
+- **Name:** TextractProcessor
+- **ARN:** arn:aws:lambda:us-west-2:751017186170:function:TextractProcessor
+- **Runtime:** Python 3.11
+- **Memory:** 512 MB
+- **Timeout:** 60 seconds
+- **Handler:** lambda_function.lambda_handler
+
+### S3 Bucket
+- **Name:** textract-processor-1769570700
+- **Region:** us-west-2
+- **Folders:** documents/, results/
+
+### API Gateway
+- **API ID:** uma02rzt4fb
+- **Stage:** prod
+- **Endpoint:** https://uma02rzt4fb.execute-api.us-west-2.amazonaws.com/prod/process
+- **Method:** POST
+
+### IAM Role
+- **Name:** TextractProcessorLambdaRole
+- **ARN:** arn:aws:iam::751017186170:role/TextractProcessorLambdaRole
+- **Permissions:** Textract, S3, CloudWatch
+
+## Capabilities
+- Text extraction from PDFs and images
+- Form field recognition (key-value pairs)
+- Table extraction with structure
+- REST API endpoint
+- JSON response format
+
+## Test Results
+- Successfully processed sample invoice
+- Extracted 64 words, 33 lines
+- Found 10 form fields
+- Extracted 1 table
+- Processing time: ~3-5 seconds
+
+## Cost
+- $0/month (AWS Free Tier)
+- 1,000 pages/month free

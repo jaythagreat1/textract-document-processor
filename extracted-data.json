@@ -1,0 +1,95 @@
+{
+    "document_info": {
+        "source": "s3://textract-processor-1769570700/documents/sample-invoice.png",
+        "file_type": "png",
+        "processed_at": "2026-01-28T03:55:31.914705",
+        "page_count": 1
+    },
+    "extracted_text": "INVOICE\nCompany: Tech Solutions Inc.\nInvoice #: INV-2025-001\nDate: January 27, 2025\nBill To:\nACME Corporation\n123 Business St\nNew York, NY 10001\nItem\nQuantity\nPrice\nTotal\nConsulting Services\n40 hrs\n$150/hr\n$6,000\nCloud Infrastructure\n1\n$500\n$500\nSupport Package\n1\n$200\n$200\nSubtotal:\n$6,700\nTax (8%):\n$536\nTotal:\n$7,236\nPayment Terms: Net 30\nDue Date: February 26, 2025\nThank you for your business!",
+    "forms": {
+        "Company:": "Tech Solutions Inc.",
+        "Due Date:": "February 26, 2025",
+        "Total:": "$7,236",
+        "Subtotal:": "$6,700",
+        "Bill To:": "ACME Corporation 123 Business St New York, NY 10001",
+        "Payment Terms:": "Net 30",
+        "Date:": "January 27, 2025",
+        "Invoice #:": "INV-2025-001",
+        "Tax (8%):": "$536",
+        "Item": "Consulting Services Cloud Infrastructure Support Package"
+    },
+    "tables": [
+        [
+            [
+                "Item",
+                "Quantity",
+                "",
+                "Price",
+                "Total",
+                "",
+                ""
+            ],
+            [
+                "Consulting",
+                "Services",
+                "40",
+                "hrs",
+                "$150/hr",
+                "",
+                "$6,000"
+            ],
+            [
+                "Cloud Infrastructure",
+                "",
+                "1",
+                "$500",
+                "",
+                "$500",
+                ""
+            ],
+            [
+                "Support Package",
+                "",
+                "1",
+                "",
+                "$200",
+                "$200",
+                ""
+            ],
+            [
+                "Subtotal:",
+                "",
+                "",
+                "",
+                "$6,700",
+                "",
+                ""
+            ],
+            [
+                "Tax (8%):",
+                "",
+                "",
+                "",
+                "$536",
+                "",
+                ""
+            ],
+            [
+                "Total:",
+                "",
+                "",
+                "$7,236",
+                "",
+                "",
+                ""
+            ]
+        ]
+    ],
+    "statistics": {
+        "total_blocks": 98,
+        "words": 64,
+        "lines": 33,
+        "forms_found": 10,
+        "tables_found": 1
+    }
+}
